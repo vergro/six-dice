@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	xmlns:myapp="http://schemas.android.com/apk/res/com.surreall.sixdice"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/felt3"
+    android:id="@+id/startlayout"
+    android:tag="startpage1"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.4">
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.40">
+     	
+	   
+	    <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.2">
+	       <com.surreall.sixdice.ResizableButton
+					 android:id="@+id/but1" 
+					 android:text="Start Game"
+					 android:layout_margin="25dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+					 android:gravity="center"
+			         android:singleLine="true"
+			         android:layout_weight="1"
+			         android:background="@drawable/rounded_button" 
+			         />	
+			<com.surreall.sixdice.ResizableButton
+					 android:id="@+id/but2" 
+					 android:text="Upgrade"
+					 android:layout_margin="5dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+			         android:singleLine="true"
+			         android:gravity="center"
+			         android:layout_weight="1"
+			         android:background="@drawable/rounded_button" 
+			         />	
+	       
+	    
+	    </LinearLayout>    
+	     <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.2">
+			<com.surreall.sixdice.ResizableButton
+					 android:id="@+id/but3" 
+					 android:text="Rules"
+					 android:layout_margin="5dp"
+					 android:layout_width="wrap_content"
+					 android:layout_height="fill_parent"
+			         android:singleLine="true"
+			         android:gravity="center"
+			         android:padding="0dp"
+			         android:layout_weight="1"
+			         android:background="@drawable/rounded_button" 			         
+			         />	
+
+	        
+		    <com.surreall.sixdice.ResizableButton
+					 android:id="@+id/but4" 
+					 android:text="Settings"
+					 android:layout_margin="5dp"
+					 android:layout_width="wrap_content"
+					 android:layout_height="fill_parent"
+			         android:singleLine="true"
+			         android:gravity="center"
+			         android:padding="0dp"
+			         android:layout_weight="1"
+			         android:background="@drawable/rounded_button" 
+			         />	
+		</LinearLayout>    
+	    <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.2">
+			<com.surreall.sixdice.ResizableButton
+					 android:id="@+id/but5" 
+					 android:text="Online Scoreloop"
+					 android:layout_margin="5dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+			         android:singleLine="true"
+			         android:gravity="center"
+			         android:padding="0dp"
+			         android:layout_weight="1"
+			         android:background="@drawable/rounded_button" 
+			         />	
+			<com.surreall.sixdice.ResizableButton
+					 android:id="@+id/but6" 
+					 android:text="Online Google Play"
+					 android:layout_margin="5dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+			         android:singleLine="true"
+			         android:gravity="center"
+			         android:padding="0dp"
+			         android:layout_weight="1"
+			         android:background="@drawable/rounded_button" 
+			         />	
+		   
+		</LinearLayout>
+		<LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.2">
+	    	<com.surreall.sixdice.ResizableButton
+					 android:id="@+id/but7" 
+					 android:text="* More Games *"
+					 android:layout_margin="5dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+			         android:singleLine="true"
+			         android:gravity="center"
+			         android:padding="0dp"
+			         android:layout_weight="1"
+			         android:background="@drawable/rounded_button" 
+			         />	
+	    	<com.surreall.sixdice.ResizableButton
+					 android:id="@+id/but8" 
+					 android:text="Online Scores"
+					 android:layout_margin="5dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+			         android:singleLine="true"
+			         android:gravity="center"
+			         android:padding="0dp"
+			         android:layout_weight="1"
+			         android:background="@drawable/rounded_button" 
+			         />	
+		    
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

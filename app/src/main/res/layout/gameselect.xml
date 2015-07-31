@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:myapp="http://schemas.android.com/apk/res/com.surreall.sixdice"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/felt3"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.4">
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5">
+     	
+	   
+	    <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.22">
+	        <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:text=""
+			        android:layout_weight=".45"
+				    />
+	        <TextView
+	        		android:id="@+id/choose_game" 
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:text=""
+			        android:gravity="bottom"
+			        android:textSize="11dp"
+			        android:layout_weight="0.55"
+				    />
+	    
+	    </LinearLayout>    
+	     <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.2">
+			<Button
+					 android:id="@+id/originalStart" 
+					 android:text="@string/original" 
+					 android:layout_margin="5dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+			         android:layout_gravity="top"
+			         android:layout_weight="1"
+			         />	
+	        
+		   <Button
+					 android:id="@+id/trueStart" 
+					 android:text="True Yahtzee"
+					 android:layout_margin="5dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+			         android:layout_gravity="top"
+			         android:layout_weight="1"
+			         />		
+		</LinearLayout>    
+	    <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.2">
+			<Button
+					 android:id="@+id/doubleStart" 
+					 android:text="Double Yahtzee"
+					 android:layout_margin="5dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+			         android:layout_gravity="top"
+			         android:layout_weight="1"
+			         />	
+		    <Button
+					 android:id="@+id/seqStart" 
+					 android:text="Sequential Yahtzee"
+					 android:layout_margin="5dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+			         android:layout_gravity="top"
+			         android:layout_weight="1"
+			         />	
+		</LinearLayout>
+		<LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.2">
+	    
+	    	<TextView
+					 android:id="@+id/blankStart1" 
+					 android:text=""
+					 android:layout_margin="5dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+			         android:layout_gravity="top"
+			         android:layout_weight="1"
+			         />	
+		    <TextView
+					 android:id="@+id/blankStart2" 
+					 android:text=""
+					 android:layout_margin="5dp"
+					 android:layout_width="fill_parent"
+					 android:layout_height="fill_parent"
+			         android:layout_gravity="top"
+			         android:layout_weight="1"
+			         />	
+		</LinearLayout>
+		<LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.18">
+					 <com.google.ads.AdView
+					android:id="@+id/ad"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right"
+					ads:adUnitId="a14e79a203f0300"
+					ads:adSize="BANNER"
+					ads:loadAdOnCreate="true" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+		<!--CheckBox android:summary="Check box for sound effects. \nUncheck to mute." 
+					android:title="Sound Effects" 
+					android:key="muteSound"></CheckBox-->
+		<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+		  <TextView
+	        		android:id="@+id/soundText" 
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="Sound Options"
+			        android:layout_gravity="bottom"
+			        android:gravity="center_horizontal"
+	        		android:layout_weight="2"
+				    />
+		</LinearLayout>
+	    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+		 		
+		 		 <RadioGroup
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+        			android:layout_weight="4"
+        			android:gravity="center"
+				    android:id="@+id/radio_group1">
+				    <RadioButton
+				        android:id="@+id/radio_ori"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:text="Original"/>
+				    <RadioButton
+				        android:id="@+id/radio_new"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:text="New" />
+				    <RadioButton
+				        android:id="@+id/radio_mute"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:text="Mute" />
+</RadioGroup>
+		 </LinearLayout>	
+		<CheckBox 	android:id="@+id/checkbox2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="13dp"
+					android:textStyle="bold"
+					android:text="Check box for ScoreLoop. \nUncheck to disable ScoreLoop." />
+		<CheckBox 	android:id="@+id/checkboxHint"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="13dp"
+					android:textStyle="bold"
+					android:text="Check box to Highlight Hint. \nUncheck to disable Hint." />
+		
+				<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+		 <com.surreall.sixdice.ResizableButton
+				 android:id="@+id/rulesButton" 
+				 android:text="@string/rulesT"
+				 android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+			     android:singleLine="true"
+		         android:layout_weight="0.7"  />
+		 <TextView
+        		android:id="@+id/rulesText" 
+        		android:text="Click Button to see \n Game Rules"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:layout_weight="0.4"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+				    />	
+	    </LinearLayout>
+		
+<TextView
+        		android:id="@+id/developerText" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/developer"
+		        android:gravity="center"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:textColor="#FFF"
+				    />	
+		         
+</LinearLayout>
