@@ -27,7 +27,7 @@
 	        android:layout_width="fill_parent"
 	        android:layout_height="fill_parent"
 	        android:layout_weight="0.2">
-	       <com.surreall.sixdice.ResizableButton
+	       	<com.surreall.sixdice.ResizableButton
 					 android:id="@+id/but1" 
 					 android:text="Start Game"
 					 android:layout_margin="25dp"
@@ -37,7 +37,7 @@
 			         android:singleLine="true"
 			         android:layout_weight="1"
 			         android:background="@drawable/rounded_button" 
-			         />	
+			         />
 			<com.surreall.sixdice.ResizableButton
 					 android:id="@+id/but2" 
 					 android:text="Upgrade"
@@ -68,9 +68,7 @@
 			         android:padding="0dp"
 			         android:layout_weight="1"
 			         android:background="@drawable/rounded_button" 			         
-			         />	
-
-	        
+			         />
 		    <com.surreall.sixdice.ResizableButton
 					 android:id="@+id/but4" 
 					 android:text="Settings"

@@ -125,7 +125,7 @@ public class Start extends Main{
 	        buttonListener2 = new OnClickListener(){	//resume
 				@Override
 				public void onClick(View arg0) {	
-					Intent inten1 = new Intent(Start.this,  yatzee.class);		   	 	
+					Intent inten1 = new Intent(Start.this,  Game.class);
 		   	 		startActivityForResult(inten1,0);					
 				}	        	
 	        };
@@ -196,7 +196,7 @@ public class Start extends Main{
 					
 					gameEditor.putInt(GAME_PREFERENCES_TYPE, 3);
 		   	 		gameEditor.commit();
-					Intent inten1 = new Intent(Start.this, yatzee.class);
+					Intent inten1 = new Intent(Start.this, Game.class);
 					startActivityForResult(inten1,0);
 					
 				}
@@ -209,7 +209,7 @@ public class Start extends Main{
 					
 					gameEditor.putInt(GAME_PREFERENCES_TYPE, 2);
 		   	 		gameEditor.commit();
-					Intent inten1 = new Intent(Start.this, yatzee.class);
+					Intent inten1 = new Intent(Start.this, Game.class);
 					startActivityForResult(inten1,0);
 					
 				}
@@ -222,7 +222,7 @@ public class Start extends Main{
 					
 					gameEditor.putInt(GAME_PREFERENCES_TYPE, 1);
 		   	 		gameEditor.commit();
-					Intent inten1 = new Intent(Start.this, yatzee.class);
+					Intent inten1 = new Intent(Start.this, Game.class);
 					startActivityForResult(inten1,0);
 					
 				}
@@ -235,7 +235,7 @@ public class Start extends Main{
 					
 					gameEditor.putInt(GAME_PREFERENCES_TYPE, 4);
 		   	 		gameEditor.commit();
-					Intent inten1 = new Intent(Start.this, yatzee.class);
+					Intent inten1 = new Intent(Start.this, Game.class);
 					startActivityForResult(inten1,0);
 					
 				}
@@ -248,7 +248,7 @@ public class Start extends Main{
 					
 					gameEditor.putInt(GAME_PREFERENCES_TYPE, 0);
 		   	 		gameEditor.commit();
-					Intent inten1 = new Intent(Start.this, yatzee.class);
+					Intent inten1 = new Intent(Start.this, Game.class);
 					startActivityForResult(inten1,0);
 					
 				}
@@ -304,7 +304,7 @@ public class Start extends Main{
 
 				@Override
 				public void onClick(View arg0) {
-					Intent inten1 = new Intent(Start.this, yatzee.class);
+					Intent inten1 = new Intent(Start.this, Game.class);
 					startActivity(inten1);
 				}	        	
 	        };
@@ -687,20 +687,7 @@ public class Start extends Main{
 		    return false;
 		} 
 	      
-	 	 public void onStartGamePlayRequest(final Integer mode) {
-			  
-	 		 	//Integer k = 0;
-			   //This example sets the game status as being in a "challenge"
-			   MyApplication.setGamePlaySessionStatus(MyApplication.GamePlaySessionStatus.CHALLENGE);
-			   
-			   //The method also sets the challenge mode. 
-			   //If the game does not support modes this step is not needed.
-			   MyApplication.setGamePlaySessionMode(mode);  // in case of no modes in the game, this is not needed
-			   gameEditor.putInt(GAME_PREFERENCES_TYPE, mode);
-	   	 		gameEditor.commit();
-			   //The method starts a new GamePlayActivity
-			   startActivity(new Intent(this, yatzee.class)); 
-			}
+
 	 	 /*
 		@Override
 		public void onScoreSubmit(int status, Exception error) {

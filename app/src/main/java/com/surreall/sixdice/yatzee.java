@@ -1,14 +1,9 @@
 package com.surreall.sixdice;
-/* TODO
 
-
- * Achievements
-  	- yahtzee on first roll
-
- * Challenges:
-
-
- */
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.os.Bundle;
 import java.util.Random; 
  
 //The required ScoreloopUI imports
@@ -17,15 +12,7 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.games.Games;
-/*
-import com.scoreloop.client.android.core.model.Achievement;
-import com.scoreloop.client.android.core.model.Score;
-import com.scoreloop.client.android.ui.ChallengesScreenActivity;
-import com.scoreloop.client.android.ui.EntryScreenActivity;
-import com.scoreloop.client.android.ui.OnScoreSubmitObserver;
-import com.scoreloop.client.android.ui.ScoreloopManagerSingleton;
-import com.scoreloop.client.android.ui.ShowResultOverlayActivity;
-*/
+
 import com.surreall.sixdice.Preferences;
 
 import android.app.AlertDialog;
@@ -41,16 +28,14 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
-import android.os.Bundle;
+
 import android.os.CountDownTimer;
 import android.util.Log;
 //import android.util.Log;
 //import android.view.Display;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -283,12 +268,12 @@ public class yatzee extends Main{
 	int[] ovaIds =  new int[] {
 		R.id.ova1, R.id.ova2, R.id.ova3, R.id.ova4, R.id.ova5, R.id.ova6};
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-
     	setVolumeControlStream (AudioManager.STREAM_MUSIC);
     	mGameType = getSharedPreferences(GAME_PREFERENCES_TYPE, Context.MODE_PRIVATE);  
     	gameEditor = mGameType.edit();
@@ -1466,7 +1451,7 @@ public class yatzee extends Main{
 
     }
     
-    
+
     public void setupSound(){
         mSoundManager = new SoundManager();
         mSoundManager.initSounds(getBaseContext());
@@ -1624,7 +1609,7 @@ public class yatzee extends Main{
 					upButtons2[i].setBackgroundColor(Color.BLACK);
 				}
 			}
-			/*
+
 	    	for (int i = 0; i < 9; i++) {
 	    		if(setBlack[2]+1> i) {
 	    			if(LoSet[i]==0){
@@ -1649,7 +1634,7 @@ public class yatzee extends Main{
 				}
 			}
 			
-			*/
+
 		}
 
 	}
@@ -1741,8 +1726,8 @@ public class yatzee extends Main{
 		 * 
 		 * 
 		 * 
-		 * 
 		 */
+
 		//LayoutParams param1 = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT, (float) 1.0);
 		//	QVGA:		320x240
 		//	WVGA400		400x240
@@ -1855,7 +1840,7 @@ public class yatzee extends Main{
 			params3.weight = (float) 0.575;
 			rollMenu.setLayoutParams(params3);
 		}
-		
+
 		
 		
 		
@@ -2331,28 +2316,18 @@ public class yatzee extends Main{
 		        
 		        
 			}
-			/*
-			if(isScoreLoop){
-				achievementsCheck();
-			}
-			*/
+
 			
 			if(isPlayServices){
 				achievementsGP();
 			}
-			/*
-			if(isChallenge){
-				isScoreLoop = true;
-				submitCheck();
-				
-			}
-			*/
+
 		}
 
 	}
 	private void achievementsGP()
 	{
-		//***** GOOGLE PLAY *****//
+
 			achStringGP[21] = getResources().getString(R.string.achievement_2000_lifetime_points); 
 			achStringGP[22] = getResources().getString(R.string.achievement_10000_lifetime_points);
 			achStringGP[23] = getResources().getString(R.string.achievement_50000_lifetime_points);			
@@ -2465,7 +2440,7 @@ public class yatzee extends Main{
 	private void achievementsCheck() {
 		
 				
-		//*** SCORELOOP ***//
+
 		
 		 // Achievement String
 		achString[0] = "com.surreall.sixdice.goodscore"; 
@@ -2561,151 +2536,7 @@ public class yatzee extends Main{
         
         
         // LifeTime Score
-        /*
-        for (int ltc = 21; ltc < 25; ltc++) { 
-        	_achievements[ltc] = ScoreloopManagerSingleton.get().getAchievement(achString[ltc]);
-        	//Integer achVal = _achievements[ltc].getAward().getAchievingValue();
-        	Integer achVal = ChalVal[ltc];
-        	
-        	Integer gtt = 0;
-        	
-        	if(lifetimeScore < achVal){
-        		if (!_achievements[ltc].isAchieved()) {
-        			gtt = lifetimeScore;
-        			_achievements[ltc].setValue(gtt);
-        		}
-        	} else {
-        		if (!_achievements[ltc].isAchieved()) {
-        			gtt = achVal;
-        			_achievements[ltc].setValue(gtt);
-    	    		toastMessage = achMessage[ltc];
-    	    		toastText.setText("Achievement Unlocked\n" + toastMessage);
-    	    		toast.show();
-        		 } 
-        	}  
-		}
-        
-        // LifeTime Yahtzees
-        for (int ltc = 26; ltc < 29; ltc++) { 
-        	_achievements[ltc] = ScoreloopManagerSingleton.get().getAchievement(achString[ltc]);
-        	//Integer achVal = _achievements[ltc].getAward().getAchievingValue();
-        	Integer achVal = ChalVal[ltc];
-        	
-        	Integer gtt = 0;
-        	
-        	if(lifetimeYahtzees < achVal){
-        		if (!_achievements[ltc].isAchieved()) {
-        			gtt = lifetimeYahtzees;
-        			_achievements[ltc].setValue(gtt);
-        		}
-        	} else {
-        		if (!_achievements[ltc].isAchieved()) {
-        			gtt = achVal;
-        			_achievements[ltc].setValue(gtt);
-    	    		toastMessage = achMessage[ltc];
-    	    		toastText.setText("Achievement Unlocked\n" + toastMessage);
-    	    		toast.show();
-        		 } 
-        	}  
-		}
-        
-        // LifeTime Games
-        for (int ltc = 30; ltc < 33; ltc++) { 
-        	_achievements[ltc] = ScoreloopManagerSingleton.get().getAchievement(achString[ltc]);
-        	//Integer achVal = _achievements[ltc].getAward().getAchievingValue();
-        	Integer achVal = ChalVal[ltc];
-        	
-        	Integer gtt = 0;
-        	
-        	if(lifetimeGames < achVal){
-        		if (!_achievements[ltc].isAchieved()) { 
-        			gtt = lifetimeGames;
-        			_achievements[ltc].setValue(gtt);
-        		}
-        	} else {
-        		if (!_achievements[ltc].isAchieved()) {
-        			gtt = achVal;
-        			_achievements[ltc].setValue(gtt);
-    	    		toastMessage = achMessage[ltc];
-    	    		toastText.setText("Achievement Unlocked\n" + toastMessage);
-    	    		toast.show();
-        		 } 
-        	}  
-		}
-		
-        
-        
-        if(grandTotal > 380 & gameNum == 1){   // goodscore 
-        	_achievements[0] = ScoreloopManagerSingleton.get().getAchievement(achString[0]);
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[0].getAward().getIdentifier(), true, true);
-        }
-        
-        if(grandTotal > 750 & gameNum == 2){   // doublegoodscore
-        	_achievements[1] = ScoreloopManagerSingleton.get().getAchievement(achString[1]);
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[1].getAward().getIdentifier(), true, true);
-        }
-        if(grandTotal > 550 & gameNum == 1){   // greatscore
-        	_achievements[2] = ScoreloopManagerSingleton.get().getAchievement(achString[2]);
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[2].getAward().getIdentifier(), true, true);
-        }
-        if(grandTotal > 1100 & gameNum == 2){   // doublegreatscore
-        	_achievements[3] = ScoreloopManagerSingleton.get().getAchievement(achString[3]);
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[3].getAward().getIdentifier(), true, true);
-        }
 
-        if(grandTotal > 700 & gameNum == 4){   // seqnature
-        	_achievements[5] = ScoreloopManagerSingleton.get().getAchievement(achString[5]);
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[5].getAward().getIdentifier(), true, true);
-        }
-
-        if(extraCount > 2 ){   // dooubleextra
-        	_achievements[6] = ScoreloopManagerSingleton.get().getAchievement(achString[6]);
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[6].getAward().getIdentifier(), true, true);
-        }
-        if(!isScratch & gameNum == 2){ // Without a scratch
-        	_achievements[7] = ScoreloopManagerSingleton.get().getAchievement("com.surreall.sixdice.noscratch");
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[7].getAward().getIdentifier(), true, true);
-        }
-        if(!isScratch & gameNum == 4){   // no scratch seq
-        	_achievements[8] = ScoreloopManagerSingleton.get().getAchievement(achString[8]);
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[8].getAward().getIdentifier(), true, true);
-        }
-        if(grandTotal == 6){					// minimalist
-        	_achievements[9] = ScoreloopManagerSingleton.get().getAchievement(achString[9]);
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[9].getAward().getIdentifier(), true, true);
-        }
-        if(grandTotal == 50){ 	 				// 50 on the nose
-        	_achievements[10] = ScoreloopManagerSingleton.get().getAchievement("com.surreall.sixdice.50onthenose");
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[10].getAward().getIdentifier(), true, true);
-        }  
-        if(grandTotal == 100){					// 100 on the nose
-        	_achievements[11] = ScoreloopManagerSingleton.get().getAchievement("com.surreall.sixdice.100onthenose");
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[11].getAward().getIdentifier(), true, true);
-        }
-        if(grandTotal == 200){					// 200 on the nose
-        	_achievements[12] = ScoreloopManagerSingleton.get().getAchievement("com.surreall.sixdice.200onthenose");
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[12].getAward().getIdentifier(), true, true);
-        }
-        if(grandTotal == 300){					// 300 on the nose
-        	_achievements[13] = ScoreloopManagerSingleton.get().getAchievement("com.surreall.sixdice.300onthenose");
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[13].getAward().getIdentifier(), true, true);
-        }
-        
-        if(grandTotal >= 950 & gameNum == 5){   // goodbonus
-        	_achievements[14] = ScoreloopManagerSingleton.get().getAchievement(achString[14]);
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[14].getAward().getIdentifier(), true, true);
-        }
-        if(grandTotal >= 1200 & gameNum == 5){   // goodbonus
-        	_achievements[15] = ScoreloopManagerSingleton.get().getAchievement(achString[15]);
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[15].getAward().getIdentifier(), true, true);
-        }
-        
-        if(grandTotal >= 1000 & gameNum == 5 & extraCount <= 2 ){   // impossiblebonus
-        	_achievements[16] = ScoreloopManagerSingleton.get().getAchievement(achString[16]);
-        	ScoreloopManagerSingleton.get().achieveAward(_achievements[16].getAward().getIdentifier(), true, true);
-        }
-        
-         */
 		        
 	}
 	public void resetHint(){
@@ -3017,14 +2848,7 @@ public class yatzee extends Main{
 	}
 	public void soundPlay(int s){
 
-		
-		/*
-		isSound = mGameSound.getBoolean(GAME_PREFERENCES_SOUND, true);
-		
-		if(isSound){
-			mSoundManager.playSound(s);	// play diceroll sound
-		}
-		*/
+
 		
 		radioSound = mRadioSound.getInt(GAME_PREFERENCES_RADIO_SOUND, 1);
 		
@@ -3125,5 +2949,6 @@ public class yatzee extends Main{
 		return super.onKeyDown(keyCode, event);
 		
 	}
+
 
 }
