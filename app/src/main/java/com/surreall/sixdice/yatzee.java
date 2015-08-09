@@ -382,7 +382,6 @@ public class yatzee extends Main{
         	loButtons2[i] = (ResizableButton)findViewById(loIds2[i]);
         }
         loButtons[10].setText("0");
-
         hiScoreText();
         textAdjust();
         
