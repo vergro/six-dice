@@ -10,7 +10,7 @@
         android:id="@+id/wholemenu"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight=".25"
+        android:layout_weight="7"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -25,11 +25,11 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_gravity="bottom"
-                android:layout_weight="0.36"
+                android:layout_weight="1"
                 android:gravity="bottom"
                 android:orientation="vertical">
 
-             <!--   <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/pairT"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -37,11 +37,13 @@
                     android:layout_weight="0.09"
                     android:gravity="center"
                     android:padding="0dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
                     android:singleLine="true"
                     android:text="@string/twoPairT"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/twoTripleT"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -53,7 +55,7 @@
                     android:text="@string/twoTripleT"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/threeKT"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -65,7 +67,7 @@
                     android:text="@string/threeKT"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/fourKT"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -77,7 +79,7 @@
                     android:text="@string/fourKT"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/fullT"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -91,7 +93,7 @@
 
                     />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/tinyT"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -103,7 +105,7 @@
                     android:text="@string/threeXT"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/smallT"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -117,7 +119,7 @@
 
                     />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/largeT"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -129,7 +131,7 @@
                     android:text="@string/fiveXT"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/chanceT"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -141,7 +143,7 @@
                     android:text="@string/chanceT"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/fiveKT"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -153,7 +155,7 @@
                     android:text="@string/fiveKT"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/extrasT"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -163,7 +165,7 @@
                     android:padding="0dp"
                     android:singleLine="true"
                     android:text="@string/extrasT"
-                    android:textColor="#ffffff" />-->
+                    android:textColor="#ffffff" />
 
             </LinearLayout>
 
@@ -171,12 +173,12 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_gravity="bottom"
-                android:layout_weight="0.45"
+                android:layout_weight="0.8"
                 android:gravity="bottom"
                 android:orientation="vertical"
                 >
 
-               <!-- <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/pair"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -188,7 +190,7 @@
                     android:singleLine="true"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/triple"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -200,7 +202,7 @@
                     android:singleLine="true"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/threeK"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -212,7 +214,7 @@
                     android:singleLine="true"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/fourK"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -224,7 +226,7 @@
                     android:singleLine="true"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/full"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -236,7 +238,7 @@
                     android:singleLine="true"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/tiny"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -248,7 +250,7 @@
                     android:singleLine="true"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/small"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -260,7 +262,7 @@
                     android:singleLine="true"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/large"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -272,7 +274,7 @@
                     android:singleLine="true"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/chance"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -284,7 +286,7 @@
                     android:singleLine="true"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/fiveK"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -296,7 +298,7 @@
                     android:singleLine="true"
                     android:textColor="#ffffff" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/loBonus"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -306,7 +308,7 @@
                     android:gravity="center"
                     android:padding="0dp"
                     android:singleLine="true"
-                    android:textColor="#ffffff" />-->
+                    android:textColor="#ffffff" />
 
             </LinearLayout>
 
@@ -314,11 +316,11 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_gravity="bottom"
-                android:layout_weight="0.45"
+                android:layout_weight="0.8"
                 android:gravity="bottom"
                 android:orientation="vertical">
 
-                <!--<com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/pair_2"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -331,7 +333,7 @@
                     android:textColor="#ffffff"
                      />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/triple_2"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -344,7 +346,7 @@
                     android:textColor="#ffffff"
                      />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/threeK_2"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -357,7 +359,7 @@
                     android:textColor="#ffffff"
                      />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/fourK_2"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -370,7 +372,7 @@
                     android:textColor="#ffffff"
                      />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/full_2"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -383,7 +385,7 @@
                     android:textColor="#ffffff"
                      />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/tiny_2"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -396,7 +398,7 @@
                     android:textColor="#ffffff"
                      />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/small_2"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -409,7 +411,7 @@
                     android:textColor="#ffffff"
                      />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/large_2"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -422,7 +424,7 @@
                     android:textColor="#ffffff"
                      />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/chance_2"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -435,7 +437,7 @@
                     android:textColor="#ffffff"
                      />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/fiveK_2"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -448,7 +450,7 @@
                     android:textColor="#ffffff"
                      />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/loBonus_2"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
@@ -459,7 +461,7 @@
                     android:padding="0dp"
                     android:singleLine="true"
                     android:textColor="#ffffff"
-                     />-->
+                     />
             </LinearLayout>
         </LinearLayout>
 
@@ -476,27 +478,25 @@
                 android:id="@+id/rightStuffTop"
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/gameHiScore"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
                     android:layout_margin="4dp"
                     android:layout_weight="1"
-                    android:background="#006600"
                     android:padding="0dp"
                     android:singleLine="true"
                     android:textColor="#FFFFFF" />
 
-                <com.surreall.sixdice.ResizableButton
+                <com.surreall.sixdice.AutoResizeTextView
                     android:id="@+id/gameHiScoreText"
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
                     android:layout_margin="4dp"
                     android:layout_weight="1"
-                    android:background="#006600"
                     android:padding="0dp"
                     android:singleLine="true"
                     android:textColor="#FFFFFF" />
@@ -507,18 +507,18 @@
                 android:id="@+id/rightStuffBottom"
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight="4"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="bottom"
-                    android:layout_weight=".43"
+                    android:layout_weight="1"
                     android:gravity="bottom"
                     android:orientation="vertical">
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/oneT"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -530,7 +530,7 @@
                         android:text="Ones"
                         android:textColor="#ffffff" />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/twoT"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -542,7 +542,7 @@
                         android:text="Twos"
                         android:textColor="#ffffff" />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/threeT"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -554,7 +554,7 @@
                         android:text="Threes"
                         android:textColor="#ffffff" />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/fourT"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -566,7 +566,7 @@
                         android:text="Fours"
                         android:textColor="#ffffff" />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/fiveT"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -578,7 +578,7 @@
                         android:text="Fives"
                         android:textColor="#ffffff" />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/sixT"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -590,7 +590,7 @@
                         android:text="Sixes"
                         android:textColor="#ffffff" />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/totalOneT"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -602,7 +602,7 @@
                         android:text="subtotal"
                         android:textColor="#ffffff" />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/bonusT"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -620,11 +620,11 @@
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="bottom"
-                    android:layout_weight="0.45"
+                    android:layout_weight="0.8"
                     android:gravity="bottom"
                     android:orientation="vertical">
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/one"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -637,7 +637,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/two"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -650,7 +650,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/three"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -663,7 +663,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/four"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -676,7 +676,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/five"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -689,7 +689,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/six"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -702,7 +702,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/upSub"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -716,7 +716,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/bonus"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -736,11 +736,11 @@
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="bottom"
-                    android:layout_weight="0.45"
+                    android:layout_weight="0.8"
                     android:gravity="bottom"
                     android:orientation="vertical">
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/one_2"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -753,7 +753,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/two_2"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -766,7 +766,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/three_2"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -779,7 +779,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/four_2"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -792,7 +792,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/five_2"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -805,7 +805,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/six_2"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -818,7 +818,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/upSub_2"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -832,7 +832,7 @@
                         android:textColor="#ffffff"
                          />
 
-                    <com.surreall.sixdice.ResizableButton
+                    <com.surreall.sixdice.AutoResizeTextView
                         android:id="@+id/bonus_2"
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -882,101 +882,95 @@
         android:id="@+id/totalmenu"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_gravity="top"
-        android:layout_margin="1dp"
-        android:layout_marginBottom="0dp"
-        android:layout_weight="0.59"
+        android:layout_weight="0.65"
         android:orientation="horizontal">
-
         <LinearLayout
+            android:id="@+id/totalmenuleft"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_gravity="top"
-            android:layout_weight="0.5"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <com.surreall.sixdice.ResizableButton
+            <com.surreall.sixdice.AutoResizeTextView
                 android:id="@+id/totalTwoT"
+                android:text="@string/totAT"
+                android:textColor="#ffffff"
+                android:layout_margin="4dp"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="0dp"
                 android:singleLine="true"
-                android:text="Total A"
-                android:textColor="#ffffff" />
+                android:layout_weight="1"/>
 
-            <com.surreall.sixdice.ResizableButton
+            <com.surreall.sixdice.AutoResizeTextView
                 android:id="@+id/loTotal"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_margin="2dp"
-                android:background="#FF6F00"
+                android:layout_margin="4dp"
                 android:gravity="center"
-                android:padding="0dp"
                 android:singleLine="true"
-                android:text="0"
-                android:textColor="#ffffff" />
+                android:background="#FF6F00"
+                android:textColor="#ffffff"
+                android:layout_weight="0.8"/>
 
-            <com.surreall.sixdice.ResizableButton
+            <com.surreall.sixdice.AutoResizeTextView
                 android:id="@+id/loTotal_2"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_margin="2dp"
-                android:background="#FF6F00"
+                android:layout_margin="4dp"
                 android:gravity="center"
-                android:padding="0dp"
                 android:singleLine="true"
-                android:text="0"
+                android:background="#FF6F00"
                 android:textColor="#ffffff"
-                 />
-
-            <com.surreall.sixdice.ResizableButton
-                android:id="@+id/totalTwoT2"
+                android:layout_weight="0.8" />
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/totalmenuright"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_margin="3dp"
-                android:gravity="center"
-                android:padding="0dp"
-                android:singleLine="true"
-                android:text="Total B"
-                android:textColor="#ffffff" />
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-            <com.surreall.sixdice.ResizableButton
+            <com.surreall.sixdice.AutoResizeTextView
+                android:id="@+id/totalTwoT2"
+                android:text="@string/totBT"
+                android:textColor="#ffffff"
+                android:layout_margin="4dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_weight="1" />
+
+            <com.surreall.sixdice.AutoResizeTextView
                 android:id="@+id/upTotal"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_margin="2dp"
-                android:background="#FF6F00"
+                android:layout_margin="4dp"
                 android:gravity="center"
-                android:padding="0dp"
                 android:singleLine="true"
-                android:text="0"
+                android:background="#FF6F00"
                 android:textColor="#ffffff"
-                 />
+                android:layout_weight="0.8" />
 
-            <com.surreall.sixdice.ResizableButton
+            <com.surreall.sixdice.AutoResizeTextView
                 android:id="@+id/upTotal_2"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_margin="2dp"
-                android:background="#FF6F00"
+                android:layout_margin="4dp"
                 android:gravity="center"
-                android:padding="0dp"
-                android:singleLine="true"
-                android:text="0"
+                android:background="#FF6F00"
                 android:textColor="#ffffff"
-                 />
-
-        </LinearLayout>
+                android:singleLine="true"
+                android:layout_weight="0.8" />
+            </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/dicemenu"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
-        android:layout_weight="0.57"
         android:gravity="bottom"
         android:orientation="horizontal">
 
@@ -990,7 +984,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="9dp"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside" />
@@ -1007,7 +1001,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="9dp"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside" />
@@ -1024,7 +1018,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="9dp"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside" />
@@ -1041,7 +1035,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="9dp"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside" />
@@ -1058,7 +1052,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="9dp"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside" />
@@ -1075,7 +1069,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="9dp"
+                android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside" />
@@ -1161,27 +1155,12 @@
         android:layout_height="0dp"
         android:layout_gravity="bottom"
         android:layout_marginBottom="3dp"
-        android:layout_weight="0.57"
+        android:layout_weight="1.05"
         android:background="#000000"
         android:orientation="horizontal">
 
-        <com.surreall.sixdice.ResizableButton
+        <com.surreall.sixdice.AutoResizeTextView
             android:id="@+id/GrandTotal"
-            android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="0.4"
-            android:background="@drawable/rounded_button"
-            android:gravity="center"
-            android:padding="0dp"
-            android:singleLine="true"
-            android:text="Grand Total = 1111"
-            android:textSize="15dp"></com.surreall.sixdice.ResizableButton>
-
-        <com.surreall.sixdice.ResizableButton
-            android:id="@+id/roll"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_gravity="center_vertical"
@@ -1192,14 +1171,26 @@
             android:gravity="center"
             android:padding="0dp"
             android:singleLine="true"
-            android:text="@string/roll_text"
-            android:textSize="15dp"></com.surreall.sixdice.ResizableButton>
+            android:text="Grand Total = 1111"/>
+
+        <com.surreall.sixdice.AutoResizeTextView
+            android:id="@+id/roll"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:padding="0dp"
+            android:singleLine="true"
+            android:text="@string/roll_text"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.57"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
